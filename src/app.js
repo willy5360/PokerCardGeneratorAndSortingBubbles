@@ -8,7 +8,8 @@ const BODY = document.querySelector("body");
 const BOX = document.querySelector(".boxCard");
 const SORTBOX = document.querySelector(".sortBoxCard");
 const INPUT = document.querySelector("#numberGenerator");
-const SORT = document.querySelector("#sort");
+const BUBBLESORT = document.querySelector("#sort");
+const SELECTSORT = document.querySelector("#selectionSort");
 const FORM = document.querySelector("form");
 
 var DECK = 0; //event submit
@@ -29,7 +30,7 @@ FORM.addEventListener("submit", event => {
   createCard(cards, BOX);
 });
 
-SORT.addEventListener("click", event => {
+BUBBLESORT.addEventListener("click", event => {
   event.preventDefault();
   SORTBOX.innerHTML = "";
 
@@ -41,6 +42,28 @@ SORT.addEventListener("click", event => {
         cards[j - 1].cardNumber = cards[j].cardNumber;
         cards[j].cardNumber = tmp;
       }
+    }
+  }
+  createCard(cards, SORTBOX);
+});
+
+SELECTSORT.addEventListener("click", event => {
+  event.preventDefault();
+  let n = cards.length;
+  SORTBOX.innerHTML = "";
+  for (let i = 0; i < n; i++) {
+    // Finding the smallest number in the subarray
+    let min = i;
+    for (let j = i + 1; j < n; j++) {
+      if (cards[j].cardNumber < cards[min].cardNumber) {
+        min = j;
+      }
+    }
+    if (min != i) {
+      // Swapping the elements
+      let tmp = cards[i].cardNumber;
+      cards[i].cardNumber = cards[min].cardNumber;
+      cards[min].cardNumber = tmp;
     }
   }
   createCard(cards, SORTBOX);
