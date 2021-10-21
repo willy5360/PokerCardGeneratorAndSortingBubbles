@@ -13,17 +13,18 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <form>
+      <section class="submitBox">
+        <input
+          type="number"
+          id="numberGenerator"
+          placeholder="   Enter your number"
+        />
+        <input type="submit" class="btn-grad" value="draw" />
+        <button id="sort" class="btn-grad">sort</button>
+      </section>
+      <section class="boxCard"></section>
+      <section class="sortBoxCard"></section>
+    </form>
   </body>
 </html>

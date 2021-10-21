@@ -1,1 +1,144 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-image: radial-gradient(
+    circle 935px at 3.1% 5.8%,
+    rgba(182, 255, 139, 1) 0%,
+    rgba(8, 88, 127, 1) 100.2%
+  );
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row;
+  position: relative;
+}
+.card {
+  background-image: linear-gradient(
+    135deg,
+    rgb(150, 163, 182) 10.6%,
+    rgba(242, 227, 234, 1) 32.9%,
+    rgba(234, 202, 213, 1) 52.7%,
+    rgba(220, 227, 239, 1) 72.8%,
+    rgba(185, 205, 227, 1) 81.1%,
+    rgba(154, 180, 212, 1) 102.4%
+  );
+
+  height: 14rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0004);
+  margin: 15px;
+}
+
+.card-topsuit {
+  font-size: 3rem;
+  align-self: flex-start;
+  padding-left: 1rem;
+  position: relative;
+  top: -15px;
+}
+.card-centersuit {
+  font-size: 3rem;
+  align-self: center;
+  justify-content: center;
+}
+.card-bottomsuit {
+  font-size: 3rem;
+  align-self: flex-end;
+  justify-content: end;
+  transform: rotate(180deg);
+  padding-left: 1rem;
+  position: relative;
+  bottom: -15px;
+}
+.color-black {
+  background: -webkit-linear-gradient(
+    109.6deg,
+    rgba(15, 2, 2, 1) 11.2%,
+    rgba(36, 163, 190, 1) 91.1%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-red {
+  background: -webkit-linear-gradient(rgb(255, 32, 32), rgb(255, 168, 6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #43cea2 0%,
+    #185a9d 51%,
+    #43cea2 100%
+  );
+}
+.btn-grad {
+  margin-bottom: 50px;
+  margin-left: 15px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: block;
+  border: 0;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.submitBox {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
+}
+.submitBox::after {
+  display: flex;
+  justify-self: center;
+}
+
+#numberGenerator {
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border: 0;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: white;
+}
+#numberGenerator::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+#numberGenerator::-webkit-outer-spin-button,
+#numberGenerator::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#numberGenerator:hover {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+}
+.boxCard {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+}
+
+.sortBoxCard {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
