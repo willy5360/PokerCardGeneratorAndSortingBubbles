@@ -30,6 +30,7 @@ FORM.addEventListener("submit", event => {
   createCard(cards, BOX);
 });
 
+//BUBLE SORT!!!
 BUBBLESORT.addEventListener("click", event => {
   event.preventDefault();
   SORTBOX.innerHTML = "";
@@ -47,6 +48,7 @@ BUBBLESORT.addEventListener("click", event => {
   createCard(cards, SORTBOX);
 });
 
+//SELECT SORT!!!
 SELECTSORT.addEventListener("click", event => {
   event.preventDefault();
   let n = cards.length;

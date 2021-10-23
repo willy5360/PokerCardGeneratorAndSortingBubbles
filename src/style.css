@@ -1,12 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 body {
-  background-image: radial-gradient(
-    circle 935px at 3.1% 5.8%,
-    rgba(182, 255, 139, 1) 0%,
-    rgba(8, 88, 127, 1) 100.2%
-  );
+  background-image: url("25_Juli_2019_(4).jpg");
   background-size: cover;
-  display: flex;
+  background-attachment: fixed;
+  display: grid;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -72,15 +69,10 @@ body {
 }
 
 .btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #43cea2 0%,
-    #185a9d 51%,
-    #43cea2 100%
-  );
+  background: transparent;
 }
 .btn-grad {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   margin-left: 15px;
   padding: 10px 30px;
   text-align: center;
@@ -95,20 +87,31 @@ body {
 }
 
 .btn-grad:hover {
+  background-color: #ffdee9;
+  background-image: linear-gradient(90deg, #ffdee9 0%, #b5fffc 100%);
+
   background-position: right center; /* change the direction of the change here */
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 .submitBox {
   display: inline-flex;
   justify-content: center;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
+  position: relative;
+  top: 40%;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
 }
-.submitBox::after {
+/* .submitBox::after {
   display: flex;
   justify-self: center;
-}
+} */
 
 #numberGenerator {
   border-radius: 10px;
@@ -134,11 +137,18 @@ body {
 .boxCard {
   display: flex;
   flex-wrap: wrap;
-  background-color: red;
+  align-items: center;
+  justify-content: center;
+  /* width: 30rem;
+  height: 20rem; */
+  /* box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px); */
 }
 
 .sortBoxCard {
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
+  align-items: center;
+  justify-content: center;
 }
